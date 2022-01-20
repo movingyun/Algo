@@ -12,26 +12,25 @@ public class CodeUp_4085_농사짓기좋은땅 {
 		int x = sc.nextInt();
 		int y = sc.nextInt();
 
-		int[][] arr = new int[m][n];
+		int[][] arr = new int[n][m];
 		
 		for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
 			arr[i][j] = sc.nextInt();
 			}
 		}
-		System.out.println("완료1");
+
 		int ans = 0;
 		
-		for (int i = 0; i < n-y+1; i++) {
-		for (int j = 0; j < m-x+1; j++) {
+		for (int i = 0; i <= n-y; i++) {
+		for (int j = 0; j <= m-x; j++) {
 			int sum = 0;
-			for (int a = 0; a < y; a++) {
-			for (int b = 0; b < x; b++) {
-				sum += arr[i + a][j + b];
+			for (int a = i; a < i+y; a++) {
+			for (int b = j; b < j+x; b++) {
+				sum += arr[a][b];
 			}
 			}
 			ans = Math.max(ans, sum);
-			sum = 0;
 			
 			}
 		}
