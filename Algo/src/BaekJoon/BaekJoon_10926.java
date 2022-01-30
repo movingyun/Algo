@@ -6,8 +6,8 @@ public class BaekJoon_10926 {
 public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
 	
-	String arr = sc.next();
+	String s = sc.next();
 	
-	System.out.println(arr+"??!");
+	System.out.println(s+"??!");
 }
 }
