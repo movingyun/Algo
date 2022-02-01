@@ -12,7 +12,7 @@ public class BaekJoon_2577 {
 		int result = a * b * c;
 		int x = 0;
 
-		int[] num = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+		int[] num = new int[10];
 
 		if ((result / 100000000) > 0) {
 			x = 9;
