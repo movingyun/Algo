@@ -49,20 +49,19 @@ public class SWEA_1974_스도쿠검증 {
             for (int i = 0; i < 9; i += 3) {
                 for (int j = 0; j < 9; j += 3) {
                      
-                    int[] arrCnt = new int[10];
+                    int[] cnt = new int[10];
                      
                     for (int k = 0; k < 3; k++) {
                         for (int l = 0; l < 3; l++) {
-                            arrCnt[arr[k][l]]++;
+                        	cnt[arr[k][l]]++;
                         }
                     }
                     for(int k = 1; k < 10; k++) {
-                        if (arrCnt[k] == 0)
+                        if (cnt[k] == 0)
                             flag = 0;
                     }
                 }
             }
-
 			System.out.println("#" + tc + " " + flag);
 		}
 	}
