@@ -62,7 +62,13 @@ public class SWEA_1974_스도쿠검증 {
                     }
                 }
             }
-			System.out.println("#" + tc + " " + flag);
+            String result = null;
+            if(flag==0)
+            	result = "INCORRECT";
+            else
+            	result = "CORRECT";
+			System.out.println("Case " + tc + ": " + result);
+			sc.nextLine();
 		}
 	}
 }
