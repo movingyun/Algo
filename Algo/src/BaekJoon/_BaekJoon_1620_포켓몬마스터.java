@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class BaekJoon_1620_포켓몬마스터 {
+public class _BaekJoon_1620_포켓몬마스터 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
@@ -15,7 +15,7 @@ public class BaekJoon_1620_포켓몬마스터 {
 		int N = Integer.parseInt(st.nextToken());
 		int M = Integer.parseInt(st.nextToken());
 		List<String> pocket = new ArrayList<String>();
-		for (int i = 0; i < N; i++) {
+		for (int i= 0; i < N; i++) {
 			pocket.add(br.readLine()); 
 		}
 		
