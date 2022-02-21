@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class BaekJoon_10989_수정렬3 {
+public class BaekJoon_10989_수정렬3 {//카운팅정렬
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

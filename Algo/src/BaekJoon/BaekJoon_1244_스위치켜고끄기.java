@@ -39,7 +39,6 @@ public class BaekJoon_1244_스위치켜고끄기 {
 					arr[j] = arr[j] * -1 + 1;
 				}
 			}
-//		System.out.println(Arrays.toString(arr));
 		}
 		for(int i=1; i<arr.length; i++) {
 			System.out.print(arr[i]+" ");
