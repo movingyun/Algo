@@ -3,7 +3,7 @@ package BaekJoon;
 import java.util.Scanner;
 import java.util.Stack;
 
-//22.02.22 스택을 활용해서 0이 나오면 pop
+//22.02.22 스택을 활용해서 push하다가 0이 나오면 sum에 더하고 pop
 public class BaekJoon_10773_제로 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

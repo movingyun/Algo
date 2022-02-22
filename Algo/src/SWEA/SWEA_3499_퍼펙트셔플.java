@@ -17,8 +17,7 @@ public class SWEA_3499_퍼펙트셔플 {
 			}
 			String[] arr_1 = Arrays.copyOfRange(arr, 0, (a + 1) / 2);
 			String[] arr_2 = Arrays.copyOfRange(arr, (a + 1) / 2, a);
-//		System.out.println(Arrays.toString(arr_1));
-//		System.out.println(Arrays.toString(arr_2));
+
 			System.out.print("#" + tc + " ");
 			for (int i = 0; i < arr_2.length; i++) {
 				System.out.print(arr_1[i] + " ");
