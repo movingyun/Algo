@@ -3,7 +3,7 @@ package SWEA;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//22.02.20 : 왜 안되지....?
+//22.02.20
 
 public class SWEA_3499_퍼펙트셔플 {
 	public static void main(String[] args) {
@@ -15,6 +15,7 @@ public class SWEA_3499_퍼펙트셔플 {
 			for (int i = 0; i < a; i++) {
 				arr[i] = sc.next();
 			}
+			//배열 2개로 나누기
 			String[] arr_1 = Arrays.copyOfRange(arr, 0, (a + 1) / 2);
 			String[] arr_2 = Arrays.copyOfRange(arr, (a + 1) / 2, a);
 

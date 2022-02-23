@@ -14,7 +14,6 @@ public class SWEA_7087_문서제목붙이기 {
 				arr[i] = sc.next().charAt(0) - 64;
 			}
 			Arrays.sort(arr);
-//			System.out.println(Arrays.toString(arr));
 			int sum = 0;
 			for (int i = 1; i < a + 1; i++) {
 				if (arr[i] == arr[i - 1] || arr[i] == arr[i - 1] + 1)

@@ -15,7 +15,6 @@ public class SWEA_Magnetic {
 				}
 			}
 			int cnt = 0;
-			
 			for (int j = 0; j < a; j++) {
 				int flag = 0;
 				for (int i = 0; i < a; i++) {
@@ -29,6 +28,5 @@ public class SWEA_Magnetic {
 			}
 			System.out.printf("#%d %d\n", tc, cnt);
 		}
-
 	}
 }

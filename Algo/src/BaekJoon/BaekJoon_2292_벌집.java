@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class BaekJoon_2292_벌집 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-
 		int a = sc.nextInt();
 		int result = a;
 		int b = 1;
@@ -17,6 +16,5 @@ public class BaekJoon_2292_벌집 {
 				break;
 		}
 			System.out.println(i);
-
 	}
 }
