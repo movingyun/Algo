@@ -19,27 +19,31 @@ public class BaekJoon_2477_S4_참외밭 {
 		//6개 좌표 구하기
 		for (int i = 0; i < 6; i++) {
 			switch (sc.nextInt()) {
+			//1이나오면 좌표가 오른쪽으로 간다.(x+)
 			case 1:
 				int ch1 = sc.nextInt();
 				x += ch1;
 				xList[i] = x;
 				yList[i] = y;
 				break;
-
+				
+			//2가나오면 좌표가 왼쪽으로 간다.(x-)
 			case 2:
 				int ch2 = sc.nextInt();
 				x -= ch2;
 				xList[i] = x;
 				yList[i] = y;
 				break;
-
+				
+			//3이나오면 좌표가 아래쪽으로 간다.(y-)
 			case 3:
 				int ch3 = sc.nextInt();
 				y -= ch3;
 				xList[i] = x;
 				yList[i] = y;
 				break;
-
+				
+			//4가나오면 좌표가 위로 올라간다.(y+)
 			case 4:
 				int ch4 = sc.nextInt();
 				y += ch4;
