@@ -6,21 +6,14 @@ public class test {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
-        
-        for (int i = 1; i <= T; i++) {
-            String msg = sc.next();
-            int index = 0;
-            out : for (int j = 0; j < 10; j++) {
-                if (msg.charAt(0) == msg.charAt(j)) {
-                    if (msg.charAt(1) == msg.charAt(j + 1)) {
-                        if (msg.charAt(2) == msg.charAt(j + 2)) {
-                            index = j;
-                            break out;
-                        }
-                    }
-                }
-            }
-            System.out.printf("#%d %s\n", i, index);
+        int[][] box = new int[301][301];
+        int start=1;
+        for(int i=1; i<300; i++) {
+            int x=i;
+            for(int j =1; j<=i; j++) 
+                box[x--][j]=start++;
         }
+        
+        System.out.println(start);
     }
 }
