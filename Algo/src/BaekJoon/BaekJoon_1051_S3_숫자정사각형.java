@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 //22.02.28
 //최대값을 구하는거니까 가장 큰 크기부터 보면서 값이 있으면 break!
-public class BaekJoon_1051_숫자정사각형 {
+public class BaekJoon_1051_S3_숫자정사각형 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int r = sc.nextInt();

@@ -5,7 +5,7 @@ import java.util.Scanner;
 // 22.03.02
 // 에라토스테네스의 체를 만들고 cnt변수를 선언해서 하나씩 지울때 마다 cnt를 키워주고
 // cnt가 N과 같아질 떄 break후 출력
-public class BaekJoon_2960_에라토스테네스의체 {
+public class BaekJoon_2960_S4_에라토스테네스의체 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int K = sc.nextInt();
