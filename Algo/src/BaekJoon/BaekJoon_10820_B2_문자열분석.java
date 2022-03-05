@@ -2,7 +2,8 @@ package BaekJoon;
 
 import java.io.*;
 import java.util.*;
-
+//22.03.04
+//문제는 쉬운데 input값을 어떻게 넣어야되는지 고민....
 public class BaekJoon_10820_B2_문자열분석 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
