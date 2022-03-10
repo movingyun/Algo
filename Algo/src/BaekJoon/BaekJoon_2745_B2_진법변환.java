@@ -27,6 +27,5 @@ public class BaekJoon_2745_B2_진법변환 {
 			num2++;
 		}
 		System.out.println(sum);
-
 	}
 }
