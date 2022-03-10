@@ -2,7 +2,7 @@ package BaekJoon;
 
 import java.util.Scanner;
 
-public class _BaekJoon_2999_비밀이메일 {
+public class BaekJoon_2999_비밀이메일 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String msg = sc.next();

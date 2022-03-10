@@ -22,7 +22,6 @@ public class BaekJoon_10974_S3_모든순열 {
 	}
 
 	static void selectNum(int depth) {
-
 		// 조건부
 		// 다 만들었으면 출력해!
 		if (depth == a) {
