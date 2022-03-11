@@ -5,7 +5,7 @@ import java.util.Scanner;
 //22.03.10
 //사실 SWEA에서 푼거 배껴옴...
 //열,행순으로 읽으면서 더이상 없으면 continue해준다.
-public class __BaekJoon_10798_B1_세로읽기 {
+public class BaekJoon_10798_B1_세로읽기 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int max = 0;
