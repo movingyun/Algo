@@ -2,7 +2,7 @@ package Programmers;
 
 import java.util.Scanner;
 
-public class 로또의최고순위와최저순위 {
+public class Programmers_lv1_로또의최고순위와최저순위 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int[] lottos = new int[6];
