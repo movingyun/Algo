@@ -3,7 +3,7 @@ package BaekJoon;
 import java.util.Scanner;
 //22.03.15
 //nCr (n과 r을 주고 순서를 고려하지 않고 뽑기!)
-public class _BaekJoon_15650_N과M_2 {
+public class BaekJoon_15650_N과M_2 {
 	static int a;
 	static int cnt;
 	static int[] num;

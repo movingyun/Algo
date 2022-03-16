@@ -2,7 +2,10 @@ package BaekJoon;
 
 import java.util.Scanner;
 
-public class _BaekJoon_2579_S3_계단오르기 {
+//22.03.10
+//DP문제 처음 풀어본다....
+//나를 만들기 위해서는 어떤 방법이 있는지 생각해보자!!
+public class BaekJoon_2579_S3_계단오르기 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
