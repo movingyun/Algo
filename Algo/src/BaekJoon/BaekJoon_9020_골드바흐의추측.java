@@ -19,6 +19,7 @@ public class BaekJoon_9020_골드바흐의추측 {
 				}
 			}
 		}
+		
 		int t = Integer.parseInt(br.readLine());
 		for (int i = 0; i < t; i++) {
 			int max = Integer.parseInt(br.readLine());

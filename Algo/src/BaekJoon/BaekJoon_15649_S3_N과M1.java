@@ -3,8 +3,8 @@ package BaekJoon;
 import java.util.Scanner;
 
 //22.03.15
-//nCr (n과 r을 주고 순서를 고려하지 않고 뽑기!)
-public class BaekJoon_15649_N과M_1 {
+//nPr 순열 / 중복X
+public class BaekJoon_15649_S3_N과M1 {
 	static int a;
 	static int cnt;
 	static int[] num;

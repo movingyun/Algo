@@ -5,10 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+
 //22.03.16
 //짝수 = 소수인 홀수 + 소수인 홀수
 //num이 백만까지 들어올수 있는데 10만으로 잘못봐서 계속 arrayOutOfIndex에러 남...
-public class _BaekJoon_6588_S1_골드바흐의추측 {
+public class BaekJoon_6588_S1_골드바흐의추측 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -25,11 +26,11 @@ public class _BaekJoon_6588_S1_골드바흐의추측 {
 //		int t = Integer.parseInt(br.readLine());
 		for (;;) {
 			int max = Integer.parseInt(br.readLine());
-			if(max==0)
+			if (max == 0)
 				break;
-			for (int b = 0; b < max/2+1; b++) {
+			for (int b = 0; b < max / 2 + 1; b++) {
 				if (arr[b] == 0 && arr[max - b] == 0) {
-					System.out.printf("%d = %d + %d\n",max,b,max - b);
+					System.out.printf("%d = %d + %d\n", max, b, max - b);
 					break;
 				}
 			}
