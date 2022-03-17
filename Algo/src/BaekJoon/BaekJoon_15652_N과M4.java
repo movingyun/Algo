@@ -2,10 +2,8 @@ package BaekJoon;
 
 import java.util.Scanner;
 
-// 순열, 중복 허용
-// Stringbuffer 안쓰니까 시간초과....
-// 중복 허용이니까 visit 안써도 된다.
-public class BaekJoon_15651_S3_N과M3 {
+// 조합, 중복 허용
+public class BaekJoon_15652_N과M4 {
 
 	static int[] result;
 	static int pick;
@@ -38,6 +36,7 @@ public class BaekJoon_15651_S3_N과M3 {
 
 		// 재귀
 		for (int i = 0; i < all; i++) {
+			if(dept!=0&&result[dept-1]>num[i]) continue;
 			result[dept] = num[i];
 			recur(dept + 1);
 		}
