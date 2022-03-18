@@ -1,4 +1,4 @@
-package Programmers;
+package Programmers.lv1;
 
 public class _Programmers_lv1_소수만들기 {
 	static int cnt;

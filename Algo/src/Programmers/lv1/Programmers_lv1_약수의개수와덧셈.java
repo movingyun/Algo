@@ -1,4 +1,4 @@
-package Programmers;
+package Programmers.lv1;
 
 //22.03.16
 //제곱수는 약수가 홀수니까 빼준다.

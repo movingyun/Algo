@@ -1,4 +1,4 @@
-package Programmers;
+package Programmers.lv1;
 
 public class Programmers_lv1_키패드누르기 {
 	public static void main(String[] args) {
