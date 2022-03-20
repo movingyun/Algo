@@ -2,7 +2,7 @@ package BaekJoon;
 
 import java.util.Arrays;
 
-public class _BaekJoon_9095_S3_123더하기 {
+public class BaekJoon_9095_S3_123더하기 {
 
 	public static void main(String[] args) {
 		int[] array = new int[] {1, 2, 3, 4};

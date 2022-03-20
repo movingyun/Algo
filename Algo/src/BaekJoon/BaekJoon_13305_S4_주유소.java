@@ -6,7 +6,7 @@ import java.util.Scanner;
 //내가 다음거보다 작으면 가야할 거리만큼 기름을 사고 min을 나로유지
 //만약 다음이 나보다 싸면 가야할 거리만큼 사고 min을 다음걸로 바꾸고 
 //Int타입으로하면 58점만 나온다..
-public class _BaekJoon_13305_S4_주유소 {
+public class BaekJoon_13305_S4_주유소 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int city = sc.nextInt();
