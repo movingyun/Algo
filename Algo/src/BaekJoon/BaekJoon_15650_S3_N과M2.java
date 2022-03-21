@@ -3,7 +3,7 @@ package BaekJoon;
 import java.util.Scanner;
 
 //22.03.15
-//nPr 조합 / 중복X
+//nCr 조합 / 중복X
 public class BaekJoon_15650_S3_N과M2 {
 	static int a;
 	static int cnt;
