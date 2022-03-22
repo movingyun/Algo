@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 
 //22.03.19
 //재귀로 O넣을 위치를 구하고 빈칸에 O를 넣어보면서 가려지나 확인
-public class _BaekJoon_18428_S1_감시피하기 {
+public class BaekJoon_18428_S1_감시피하기 {
 
 	static int all = 0;
 	static int pick = 3;
@@ -20,11 +20,13 @@ public class _BaekJoon_18428_S1_감시피하기 {
 	static String[][] copyarr;
 	static int[] dr = { -1, 1, 0, 0 };// 상하좌우
 	static int[] dc = { 0, 0, -1, 1 };
+	static int a;
+	static String pr = "NO"; //최종출력
 
 	public static void main(String[] args) throws IOException {
-
+		StringBuilder sb = new StringBuilder();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int a = Integer.parseInt(br.readLine());
+		a = Integer.parseInt(br.readLine());
 		arr = new String[a][a];
 		copyarr = new String[a][a];
 		StringTokenizer st;
@@ -45,6 +47,7 @@ public class _BaekJoon_18428_S1_감시피하기 {
 			blank[i] = i + 1;
 		}
 		recur(0);
+		System.out.println(pr);
 	}// main함수
 
 	public static void recur(int dept) {
@@ -65,7 +68,7 @@ public class _BaekJoon_18428_S1_감시피하기 {
 						cnt++; // 몇번째 X인지 찾고
 						if (cnt == result[idx]) {// 그 자리가 O를 넣기로 한 자리면
 							copyarr[i][j] = "O";
-							System.out.print(cnt + " \n");
+//							System.out.print(cnt + " \n");
 							idx++;
 						}
 					}
@@ -75,13 +78,14 @@ public class _BaekJoon_18428_S1_감시피하기 {
 			}
 			for (int i = 0; i < arr.length; i++) {
 				for (int j = 0; j < arr.length; j++) {
-					System.out.print(copyarr[i][j] + " ");
+//					System.out.print(copyarr[i][j] + " ");
 				}
-				System.out.println();
+//				System.out.println();
 			}
 			// O로 다 바꿨고 이제 감시 되는지 확인
 			if (find()) {
-				System.out.println("YES");
+				pr = "YES";
+//				System.out.println("여기 가능!!!");
 			}
 			return;
 		}
@@ -101,9 +105,31 @@ public class _BaekJoon_18428_S1_감시피하기 {
 	}// recur함수
 
 	static boolean find() {
-		//find함수 다시 만들자
+		// find함수 다시 만들자
 		boolean answer = true;
-		
+		out: for (int i = 0; i < a; i++) {
+			for (int j = 0; j < a; j++) {
+				if (copyarr[i][j].equals("T")) {
+
+					for (int q = 0; q < 4; q++) {
+						int tr = i;
+						int tc = j;
+						while (true) {
+							tr += dr[q];
+							tc += dc[q];
+							if (tr < 0 || tr >= a || tc < 0 || tc >= a || copyarr[tr][tc].equals("O")) {
+								break;
+							}
+							if (copyarr[tr][tc].equals("S")) {
+								answer = false;
+								break out;
+							}
+						}
+					}
+
+				}
+			}
+		}
 		return answer;
 	}
 }
