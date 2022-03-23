@@ -59,6 +59,6 @@ public class _BaekJoon_2597_S4_줄자접기 {
 //		System.out.println("point"+Arrays.toString(point));
 		}
 
-		System.out.println(point[1] - point[0]);
+		System.out.println(point[0]);
 	}
 }
