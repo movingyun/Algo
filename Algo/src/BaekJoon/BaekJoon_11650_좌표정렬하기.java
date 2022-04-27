@@ -1,6 +1,7 @@
 package BaekJoon;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class BaekJoon_11650_좌표정렬하기 {
@@ -13,27 +14,19 @@ public class BaekJoon_11650_좌표정렬하기 {
 				arr[i][j] = sc.nextInt();
 			}
 		}
-		for (int i = 0; i < T; i++) {
-			int[] tmp = null;
-			for (int j = 1; j < T - i; j++) {
-				if (arr[i][0] > arr[i + j][0]) {
-					tmp = arr[i];
-					arr[i] = arr[i + j];
-					arr[i + j] = tmp;
-				}
-				else if (arr[i][0] == arr[i + j][0] && arr[i][1] > arr[i + j][1]) {
-					tmp = arr[i];
-					arr[i] = arr[i + j];
-					arr[i + j] = tmp;
-				}
-			}
-		}
 
-		for(int i=0; i<T; i++) {
-			for(int j=0; j<2; j++) {
-				System.out.print(arr[i][j]+" ");
+		Arrays.sort(arr, new Comparator<int[]>() {
+			public int compare(int[] o1, int[] o2) {
+				if (o1[0] == o2[0]) {
+					return o1[1] - o2[1];
+				} else {
+					return o1[0] - o2[0];
+				}
 			}
-			System.out.println();
+		});
+
+		for (int i = 0; i < T; i++) {
+			System.out.print(arr[i][0] + " " + arr[i][1]+"\n");
 		}
 	}
 }
