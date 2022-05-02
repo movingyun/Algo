@@ -1,12 +1,13 @@
 package BaekJoon;
 
 import java.util.Arrays;
+import java.util.Deque;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 import java.util.Scanner;
 
 public class BaekJoon_17472_G1_다리만들기 {
-
 	static int N, M, num;
 	static int[][] map, visit, map2;
 	static int[] p;
