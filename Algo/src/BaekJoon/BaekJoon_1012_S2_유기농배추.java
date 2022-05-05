@@ -5,7 +5,6 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class BaekJoon_1012_S2_유기농배추 {
-	
 	static int M,N,K,cnt;
 	static int[][] map, visit;
 	static int[] dr = {-1,1,0,0};
